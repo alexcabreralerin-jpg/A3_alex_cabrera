@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4D8C8C"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,12 +24,16 @@
         android:id="@+id/campNom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:hint="Escriu el teu nom: "
         android:inputType="textPersonName"
+        app:backgroundTint="#1A237E"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="82dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.048"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -37,6 +42,7 @@
         android:layout_height="wrap_content"
         android:hint="Escriu el teu correu: "
         android:inputType="textPersonName"
+        app:backgroundTint="#1A237E"
         app:layout_constraintTop_toBottomOf="@+id/campNom"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -46,6 +52,7 @@
         android:layout_height="wrap_content"
         android:hint="Escriu la teva biografia"
         android:inputType="textPersonName"
+        app:backgroundTint="#1A237E"
         app:layout_constraintTop_toBottomOf="@+id/campEmail"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -55,6 +62,7 @@
         android:layout_height="wrap_content"
         android:hint="Deixa la URL de la imatge de perfil "
         android:inputType="textPersonName"
+        app:backgroundTint="#1A237E"
         app:layout_constraintTop_toBottomOf="@+id/campBio"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -62,10 +70,17 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#522B2B"
+        android:fallbackLineSpacing="false"
+        android:hapticFeedbackEnabled="true"
         android:text="Guardar"
+        app:backgroundTint="#1A237E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/campUrl"
-        tools:layout_editor_absoluteX="156dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.286" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
